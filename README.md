@@ -2,7 +2,7 @@
 Pulsar CLI to GUI,Help developers quickly operate Pulsar cluster.
 <h3>Features:</h3>
             <ul>
-                <li>Multiple clusters support</li>
+                <li>multiple environment support</li>
                 <li>pulsar-admin brokers</li>
                 <li>pulsar-admin broker-stats</li>
                 <li>pulsar-admin bookies</li>
