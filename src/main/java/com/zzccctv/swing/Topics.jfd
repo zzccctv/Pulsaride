@@ -1,0 +1,133 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+			"axis": 1
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "splitPane1"
+				add( new FormContainer( "com.intellij.ui.components.JBScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					"minimumSize": new java.awt.Dimension( 100, 20 )
+					add( new FormComponent( "com.intellij.ui.treeStructure.Tree" ) {
+						name: "tree1"
+						"rootVisible": false
+						"model": new javax.swing.tree.DefaultTreeModel( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "(root)"
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "a"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "b"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "c"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "d"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "e"
+							} )
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+				add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+					name: "splitPane2"
+					"dividerLocation": 100
+					"lastDividerLocation": 50
+					"resizeWeight": 0.8
+					"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, sfield java.awt.Color black )
+					add( new FormContainer( "com.intellij.ui.components.JBTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+						name: "tabbedPane1"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+							"axis": 1
+						} ) {
+							name: "panel1"
+							add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+								name: "toolBar1"
+								"enabled": false
+								"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+								"maximumSize": new java.awt.Dimension( 2147483647, 30 )
+								add( new FormComponent( "com.intellij.ui.SearchTextField" ) {
+									name: "textField1"
+								} )
+							} )
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollPane2"
+								add( new FormComponent( "com.intellij.ui.table.JBTable" ) {
+									name: "table1"
+									"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+										add( new java.util.Vector {
+											add( "" )
+											add( null )
+										} )
+									}, new java.util.Vector {
+										add( "A" )
+										add( "B" )
+									}, new java.util.Vector {
+										add( null )
+										add( null )
+									}, new java.util.Vector {
+										add( null )
+										add( null )
+									}, new java.util.Vector {
+										add( null )
+										add( null )
+									} )
+								} )
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "text"
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "left"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+						"axis": 1
+					} ) {
+						name: "panel2"
+						"maximumSize": new java.awt.Dimension( 100, 32767 )
+						"preferredSize": new java.awt.Dimension( 100, 412 )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane3"
+							add( new FormComponent( "com.intellij.ui.table.JBTable" ) {
+								name: "table2"
+								"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+									add( new java.util.Vector {
+										add( "1" )
+									} )
+									add( new java.util.Vector {
+										add( "1" )
+									} )
+								}, new java.util.Vector {
+									add( null )
+								}, new java.util.Vector {
+									add( null )
+								}, new java.util.Vector {
+									add( null )
+								}, new java.util.Vector {
+									add( null )
+								} )
+								"selectionMode": 0
+								"showHorizontalLines": false
+							} )
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "right"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "right"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 455, 320 )
+		} )
+	}
+}

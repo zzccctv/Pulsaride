@@ -1,0 +1,25 @@
+#if (${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+import org.apache.pulsar.client.api.Consumer;
+import org.apache.pulsar.client.api.Message;
+import org.apache.pulsar.client.api.PulsarClient;
+import org.apache.pulsar.client.api.Schema;
+
+public class ${NAME} {
+    public static void main(String[] args) {
+        try {
+            PulsarClient client = PulsarClient.builder()
+                    .serviceUrl("${SERVICE_URL}")
+                    .build();
+            Consumer<String> consumer = client.newConsumer(Schema.STRING)
+                    .topic("${TOPIC}")
+                    .subscriptionName("${SUBSCRIPTION_NAME}")
+                    .subscribe();
+            while (true) {
+                Message<String> msg = consumer.receive();
+                System.out.println("Message received: " + new String(msg.getData()));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}

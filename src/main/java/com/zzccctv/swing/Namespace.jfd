@@ -1,0 +1,127 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+			"axis": 0
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "splitPane1"
+				add( new FormContainer( "com.intellij.ui.components.JBScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					"minimumSize": &Dimension0 new java.awt.Dimension( 100, 20 )
+					add( new FormComponent( "com.intellij.ui.treeStructure.Tree" ) {
+						name: "tree1"
+						"rootVisible": false
+						"model": &DefaultTreeModel0 new javax.swing.tree.DefaultTreeModel( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "(root)"
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "a"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "b"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "c"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "d"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "e"
+							} )
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) ) {
+					name: "panel1"
+					add( new FormContainer( "com.intellij.ui.components.JBTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+						name: "tabbedPane1"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+							"axis": 1
+						} ) {
+							name: "panel2"
+							add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+								name: "toolBar1"
+								"enabled": false
+								"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+								"preferredSize": new java.awt.Dimension( 352, 34 )
+								"maximumSize": new java.awt.Dimension( 32925, 34 )
+								"minimumSize": new java.awt.Dimension( 221, 34 )
+								"alignmentY": 0.5f
+								add( new FormComponent( "com.intellij.ui.SearchTextField" ) {
+									name: "textField1"
+								} )
+							} )
+							add( new FormContainer( "com.intellij.ui.components.JBScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollPane3"
+								add( new FormComponent( "com.intellij.ui.table.JBTable" ) {
+									name: "table1"
+									"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+										add( null )
+										add( "AdminRoles" )
+										add( "AllowedClusters" )
+									}, new java.util.Vector {
+										add( class java.lang.Boolean )
+										add( null )
+										add( null )
+									}, new java.util.Vector {
+										add( null )
+										add( null )
+										add( null )
+									}, new java.util.Vector {
+										add( null )
+										add( null )
+										add( null )
+									} )
+								} )
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "text"
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+						"axis": 1
+					} ) {
+						name: "panel4"
+						add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+							name: "toolBar2"
+							"enabled": false
+							"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "button1"
+								"maximumSize": new java.awt.Dimension( 30, 30 )
+								"minimumSize": new java.awt.Dimension( 30, 30 )
+								"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+								"icon": new com.jformdesigner.model.SwingIcon( 0, "/nodes/class.png" )
+								"preferredSize": new java.awt.Dimension( 30, 30 )
+							} )
+							add( new FormComponent( "com.intellij.ui.SearchTextField" ) {
+								name: "textField2"
+								"maximumSize": new java.awt.Dimension( 2147483647, 30 )
+							} )
+						} )
+						add( new FormContainer( "com.intellij.ui.components.JBScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane2"
+							"minimumSize": #Dimension0
+							add( new FormComponent( "com.intellij.ui.treeStructure.Tree" ) {
+								name: "tree2"
+								"rootVisible": false
+								"model": #DefaultTreeModel0
+							} )
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "right"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 435, 300 )
+		} )
+	}
+}

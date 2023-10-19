@@ -1,0 +1,172 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+			"axis": 0
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "splitPane1"
+				add( new FormContainer( "com.intellij.ui.components.JBScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					"minimumSize": new java.awt.Dimension( 100, 20 )
+					add( new FormComponent( "com.intellij.ui.treeStructure.Tree" ) {
+						name: "tree1"
+						"rootVisible": false
+						"model": new javax.swing.tree.DefaultTreeModel( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "(root)"
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "a"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "b"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "c"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "d"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "e"
+							} )
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+					"axis": 1
+				} ) {
+					name: "panel1"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+						"$columnCount": 5
+						"$rowCount": 2
+					} ) {
+						name: "panel2"
+						"preferredSize": new java.awt.Dimension( 292, 67 )
+						"minimumSize": new java.awt.Dimension( 292, 67 )
+						"maximumSize": new java.awt.Dimension( 2147483647, 67 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"text": "0"
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"text": "0"
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"column": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": "0"
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"column": 2
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label4"
+							"text": "0"
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"column": 3
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label5"
+							"text": "0"
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"column": 4
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label6"
+							"text": "Topics"
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"row": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label7"
+							"text": "Partitions"
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"column": 1
+							"row": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label8"
+							"text": "URP"
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"column": 2
+							"row": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label9"
+							"text": "NO Leader"
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"column": 3
+							"row": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label10"
+							"text": "< Min ISR"
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"column": 4
+							"row": 1
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+						name: "toolBar1"
+						"enabled": false
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"preferredSize": new java.awt.Dimension( 352, 34 )
+						"maximumSize": new java.awt.Dimension( 32925, 34 )
+						"minimumSize": new java.awt.Dimension( 221, 34 )
+						"alignmentY": 0.5f
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button1"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/general/add.png" )
+							"maximumSize": new java.awt.Dimension( 30, 30 )
+							"minimumSize": new java.awt.Dimension( 30, 30 )
+							"preferredSize": new java.awt.Dimension( 30, 30 )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button3"
+							"preferredSize": new java.awt.Dimension( 30, 30 )
+							"maximumSize": new java.awt.Dimension( 30, 30 )
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/general/remove.png" )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button2"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/actions/upload.png" )
+							"preferredSize": new java.awt.Dimension( 30, 30 )
+						} )
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+							name: "hSpacer1"
+						} )
+						add( new FormComponent( "com.intellij.ui.SearchTextField" ) {
+							name: "textField1"
+						} )
+					} )
+					add( new FormContainer( "com.intellij.ui.components.JBScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane2"
+						add( new FormComponent( "com.intellij.ui.table.JBTable" ) {
+							name: "table1"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( null )
+							}, new java.util.Vector {
+								add( class java.lang.Boolean )
+							}, new java.util.Vector {
+								add( null )
+							}, new java.util.Vector {
+								add( new com.jformdesigner.model.SwingTableColumn( null, 0, 0, 30, true ) )
+							} )
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "right"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 405, 300 )
+		} )
+	}
+}

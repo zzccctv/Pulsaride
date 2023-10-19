@@ -1,0 +1,81 @@
+<idea-plugin>
+    <id>zzccctv.Pulsaride</id>
+    <name>Pulsaride</name>
+    <vendor email="zzccctv@163.com">zzccctv</vendor>
+    <description>
+        <![CDATA[
+            <h4>PulsarAdmin CLI to GUI,Help developers quickly operate pulsar cluster.</h4>
+            <h3>Features:</h3>
+             <ul>
+                <li>multiple clusters support</li>
+                <li>pulsar-admin brokers</li>
+                <li>pulsar-admin broker-stats</li>
+                <li>pulsar-admin bookies</li>
+                <li>pulsar-admin clusters</li>
+                <li>pulsar-admin namespaces</li>
+                <li>pulsar-admin ns-isolation-policy</li>
+                <li>pulsar-admin tenants</li>
+                <li>pulsar-admin topics</li>
+                <li>pulsar-admin resourcegroups</li>
+                <li>pulsar-admin resource-quotas</li>
+                <li>pulsar-admin proxy-stats</li>
+           </ul>
+         ]]>
+    </description>
+    <change-notes>
+        <![CDATA[
+        <ul>
+            <li>Fix NullPointerException In IDEA 2023.2.2</li>
+        </ul>
+        ]]>
+    </change-notes>
+    <version>2023.1.2</version>
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="com.zzccctv.storage.PulsarStorage"/>
+    </extensions>
+
+
+    <actions>
+        <group id="Pulsaride" text="Pulsaride" description="Pulsaride">
+            <add-to-group group-id="MainMenu" relative-to-action="WindowMenu" anchor="before"/>
+            <action id="com.zzccctv.action.PulsarEnvironment" class="com.zzccctv.action.PulsarEnvironment"
+                    text="environment"/>
+            <separator/>
+            <action id="com.zzccctv.action.PulsarBrokers" class="com.zzccctv.action.PulsarBrokers"
+                    text="pulsar-admin brokers"/>
+            <action id="com.zzccctv.action.PulsarBrokerStats" class="com.zzccctv.action.PulsarBrokerStats"
+                    text="pulsar-admin broker-stats"/>
+            <action id="com.zzccctv.action.PulsarBookies" class="com.zzccctv.action.PulsarBookies"
+                    text="pulsar-admin bookies"/>
+            <separator/>
+            <action id="com.zzccctv.action.PulsarClusters" class="com.zzccctv.action.PulsarClusters"
+                    text="pulsar-admin clusters"/>
+            <separator/>
+            <action id="com.zzccctv.action.PulsarNamespaces" class="com.zzccctv.action.PulsarNamespaces"
+                    text="pulsar-admin namespaces"/>
+            <action id="com.zzccctv.action.PulsarNsIsolationPolicy" class="com.zzccctv.action.PulsarNsIsolationPolicy"
+                    text="pulsar-admin ns-isolation-policy"/>
+            <separator/>
+            <action id="com.zzccctv.action.PulsarTenants" class="com.zzccctv.action.PulsarTenants"
+                    text="pulsar-admin tenants"/>
+            <action id="com.zzccctv.action.PulsarTopics" class="com.zzccctv.action.PulsarTopics"
+                    text="pulsar-admin topics"/>
+            <separator/>
+            <action id="com.zzccctv.action.PulsarResourceGroups" class="com.zzccctv.action.PulsarResourceGroups"
+                    text="pulsar-admin resourcegroups"/>
+            <action id="com.zzccctv.action.PulsarResourceQuotas" class="com.zzccctv.action.PulsarResourceQuotas"
+                    text="pulsar-admin resource-quotas"/>
+            <separator/>
+            <action id="com.zzccctv.action.PulsarProxyStats" class="com.zzccctv.action.PulsarProxyStats"
+                    text="pulsar-admin proxy-stats"/>
+        </group>
+        <group id="PulsarFile" text="Pulsaride" description="Pulsaride" popup="true" icon="/pulsarClient.svg">
+            <add-to-group group-id="NewGroup"/>
+            <action id="PulsarFileProduce" class="com.zzccctv.action.PulsarFileProduce"/>
+            <action id="PulsarFileConsumer" class="com.zzccctv.action.PulsarFileConsumer"/>
+        </group>
+    </actions>
+    <idea-version since-build="190.*"/>
+</idea-plugin>
