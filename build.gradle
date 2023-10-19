@@ -1,0 +1,33 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.5.0'
+    id 'java'
+}
+
+group 'org.example'
+version '2023.1.2'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation ("org.apache.pulsar:pulsar-client-admin-original:2.9.3") {
+        exclude group: 'org.slf4j', module: 'slf4j-api'
+    }
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.2")
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version = '2020.1'
+    intellij.updateSinceUntilBuild false
+}
+patchPluginXml {
+/*    changeNotes = """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""*/
+}
+test {
+    useJUnitPlatform()
+}
